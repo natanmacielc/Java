@@ -1,0 +1,20 @@
+Linguagem de programação: Um método padronizado, formado por um conjunto de regras léxicas, semânticas e sintáticas 
+de implementação de um código fonte(source code) - que pode ser compilado e transformado em um programa
+de computador, ou pode ser usado como um script interpretado - que informará instruções de processamento
+ao computador.
+
+Compilador: Um software que, a partir de um código fonte escrito em uma linguagem compilada, cria um programa
+semanticamente equivalente, porém escrito em outra linguagem, código objeto, que vai ser executado.
+
+Gerador de código: Processo de transformar o código objeto em código executável, que vai ser processado pelo computador.
+
+Máquina Virtual: É um programa que carrega e executa os aplicativos Java, possuindo uma abordagem híbrida convertendo os
+bytecodes em código executável da máquina. A JVM(Java Virtual Machine) é responsável pelo gerenciamento das aplicações,
+à medida que são executados.
+
+Interpretador: Uma aborgadem diferente do processo de compilação, funcionando, de certa forma, em tempo real.
+Ao executar o código através de um interpretador, você estará convertendo seu código fonte em código executável,
+linha por linha. Já em seguida, a máquina irá executar o que foi convertido sem ser criado nenhum arquivo posterior.
+Isso ocorre através de um software interpretador, que controla o fluxo de trabalho.
+
+Abrir o EsquemaAbordagem, nessa pasta, para uma ilustração visual.

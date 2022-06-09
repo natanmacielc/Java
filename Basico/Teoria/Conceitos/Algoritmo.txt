@@ -1,0 +1,11 @@
+Definição: Em matemática e ciência da computação, um algoritmo é uma sequência 
+finita de ações executáveis que visam obter uma solução para um determinado tipo de problema. 
+
+Citação: egundo Dasgupta, Papadimitriou e Vazirani; "Algoritmos são procedimentos precisos, 
+não ambíguos, padronizados, eficientes e corretos."
+
+Para que serve: Um conjunto de algoritmos, rotinas bem definidas e executáveis, pode ser
+utilizado, em ciências da computação, para execução automatizada de instruçoes programadas.
+
+Como utilizar: Através da programação, esses algoritmos podem ser automatizados e executados pelo
+processamento da máquina.

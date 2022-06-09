@@ -1,0 +1,14 @@
+Estrutura Condicional: É uma estrutura de controle que permite definir que um certo bloco de comandos
+somente será executado dependendo de uma condição.
+
+Sintaxe da Estrutura Condicional:
+
+//Se (condição):
+if (<condição>) {
+    <comando 1>;
+    <comando 2>;
+//Senão:
+} else {
+    <comando 1>;
+    <comando 2>;
+}

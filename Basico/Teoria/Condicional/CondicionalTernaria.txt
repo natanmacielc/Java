@@ -1,0 +1,6 @@
+Expressão Condicional Ternária:
+Estrutura opcional ao if-else quando se deseja decidir um VALOR com base em uma condição.
+
+Sintaxe:
+
+(<condição>) ? <valor se for verdadeiro> : <valor se for falso>

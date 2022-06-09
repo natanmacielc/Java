@@ -1,0 +1,30 @@
+Operadores Aritiméticos:
+Operador: +          Significado: Adição        Precedência: Segundo
+Operador: -          Significado: Subtração     Precedência: Segundo
+Operador: *          Significado: Multiplicação     Precedência: Primeiro
+Operador: /          Significado: Divisão       Precedência: Primeiro
+Operador: %          Significado: Resto da divisão ("mod")      Precedência: Primeiro
+
+Qualquer operação que estiver entre parentêses será priorizada.
+
+Operadores Comparativos:
+Operador: >          Significado: Maior 
+Operador: <          Significado: Menor 
+Operador: >=         Significado: Maior ou Igual 
+Operador: <=         Significado: Menor ou Igual
+Operador: ==         Significado: Igual
+Operador: !=         Significado: Diferente 
+
+Operadores Lógicos:
+Operador: &&          Significado: E 
+Operador: ||          Significado: Ou 
+Operador: !           Significado: Não
+
+Operadores de Atribuição Cumulativa:
+Operador: +=          Significado: a = a + b;
+Operador: -=          Significado: a = a - b;
+Operador: *=          Significado: a = a * b;
+Operador: /=          Significado: a = a / b;
+Operador: %=          Significado: a = a % b;
+Operador: ++          Significado: a = a + 1;
+Operador: --          Significado: a = a - 1;

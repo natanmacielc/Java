@@ -1,0 +1,14 @@
+Classes: Uma classe é uma forma de definir um tipo de dado em uma linguagem orientada a objeto. Ela é formada
+por dados e comportamentos. Para definir os dados são utilizados os atributos, e para definir o comportamento 
+são utilizados métodos.
+
+Atributos: Os Atributos em Programação Orientada a Objetos são os elementos que definem a estrutura de uma classe. 
+Os atributos também são conhecidos como variáveis de classe, e podem ser divididos em dois tipos básicos: 
+atributos de instância e de classe. Os valores dos atributos de instância determinam o estado de cada objeto. 
+Um atributo de classe possui um estado que é compartilhado por todos os objetos de uma classe. 
+
+Métodos: Um método é uma sub-rotina que é executada por um objeto ao receber uma mensagem. Os métodos determinam 
+o comportamento dos objetos de uma classe e são análogos a funções ou procedimentos da programação estruturada. 
+O envio de mensagens (chamada de métodos) pode alterar o estado de um objeto.
+
+Pacote: Agrupamento lógico de classes relacionadas, como Service, Repository e Entity.

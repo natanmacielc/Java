@@ -1,0 +1,31 @@
+Estruturas repetitivas:
+
+While
+É uma estrutura de controle que repete um bloco de comandos enquanto uma condição for verdadeira.
+
+Quando usar: Quando não se sabe previamente a quantidade de vezes que as repetições será realizada.
+
+Sintaxe: while (<condição>) {
+    comando1;
+    comando2;
+}
+
+For
+O que é: É uma estrutura de controle que repete um bloco de comandos para um certo intervalo de valores.
+
+Quando usar: quando se sabe previamente a quantidade de repetições, ou o intervalo de valores.
+
+Sintaxe: for (<inicio> ; <condição> ; <incremento>) {
+    <comando1>;
+    <comando2>;
+}
+
+Do While
+O que é: É uma estrutura de controle que executa um bloco de comandos e o repete enquanto uma condição for verdadeira.
+
+Quando usar: Em casos em que você deseja executar o bloco de comandos antes da condição.
+
+Sintaxe: do {
+    <comando1>;
+    <comando2>;
+} while (<condição>);

@@ -1,0 +1,38 @@
+Variáveis: Na programação, uma variável é um objeto capaz de reter e representar um valor ou expressão, armazenado
+numa porção de memória ram. Enquanto as variáveis só "existem" em tempo de execução, elas são associadas a "nomes",
+chamados identificadores, durante o tempo de desenvolvimento.
+
+Nomes de variáveis:
+- Não pode começar com dígito: use uma letra ou _
+- Não pode ter espaço em branco
+- Não usar acentos ou til
+- Sugestão: use o padrão "Camel Case"
+
+Sintaxe de Declaração de Variável
+<tipo> <nome> = <valor inicial (opcional)>;
+
+Exemplo:
+int(tipo de dado: inteiro) idade(nome) = 25(valor inicial);
+
+Tipos Primitivos em Java
+
+Tipos Númericos Inteiros:
+tipo - byte; tamanho - 8 bits; valores - -128 a 127; valor padrão - 0.
+tipo - short; tamanho - 16 bits; valores - -32768 a 32767; valor padrão - 0.
+tipo - int; tamanho - 32 bits; valores - -2147483648 a 2147483647; valor padrão - 0.
+tipo - long; tamanho - 64 bits; valores - -9223372036854770000 a 9223372036854770000; valor padrão - 0.
+
+Tipos Númericos Decimais:
+tipo - float; tamanho - 32 bits; valores - -1,4024E-37 a 3,4028E+38; valor padrão - 0.0f.
+tipo - double; tamanho - 64 bits; valores - -4,94E-307 a 1,79E+308; valor padrão - 0.0.
+
+Um caractere Unicode:
+tipo - char; tamanho - 16 bits; valores - '\u0000' a '\uFFFF'; valor padrão - '\u0000'.
+
+Valor verdade:
+tipo - boolean; tamanho - 1 bits; valores - {false, true}; valor padrão - false.
+
+Cadeia de caracteres:
+tipo - String.
+
+
