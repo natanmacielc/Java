@@ -1,0 +1,74 @@
+Classe
+
+Uma classe é uma forma de definir um tipo de dado em uma linguagem orientada a objeto. Ela é formada por dados e 
+comportamentos. Para definir os dados são utilizados os atributos, e para definir o comportamento são utilizados métodos.
+
+O que é um atributo?
+
+Os Atributos em Programação Orientada a Objetos são os elementos que definem a estrutura de uma classe. 
+Os atributos também são conhecidos como variáveis de classe, e podem ser divididos em dois tipos básicos: 
+atributos de instância e de classe. Os valores dos atributos de instância determinam o estado de cada objeto.
+Basicamente são dados ou campos.
+
+O que é um método?
+
+Em orientação a objetos, um método é uma sub-rotina associada a um objeto, e que possui acesso aos seus dados, 
+as variáveis membro. Ele é executado por um objeto ao receber uma mensagem.
+Basicamente são funções ou operações.
+
+Construtores
+
+O (pseudo-)método construtor determina que ações devem ser executadas quando da criação de um objeto. 
+Em Java, o construtor é definido como um método cujo nome deve ser o mesmo nome da classe e sem indicação 
+do tipo de retorno -- nem mesmo void.
+
+Sintaxe:
+
+    // Classe
+    public class <nome da classe> {
+
+        // Atributos
+        private String <variavel1>;
+        private double <variavel2>;
+        private int <variavel3>;
+
+        // Construtores
+        public <nome da classe>() {
+
+        }
+
+        public <nome da classe>(String <variavel1>, double <variavel2>, int <variavel3>) {
+            super();
+            this.<variavel1> = <variavel1>;
+            this.<variavel2> = <variavel2>;
+            this.<variavel3> = <variavel3>;
+        }
+
+        // Métodos 
+        // Getters
+        public String get<variavel1>() {
+            return <variavel1>;
+        }
+
+        public double get<variavel2>() {
+            return <variavel2>;
+        }
+
+        public int get<variavel3>() {
+            return <variavel3>;
+        }
+
+        // Setters
+        public void set<variavel1>(String <variavel1>) {
+            this.<variavel1> = <variavel1>;
+        }
+
+        public void set<variavel2>(double <variavel2>) {
+            this.<variavel2> = <variavel2>;
+        }
+
+        public void set<variavel3>(int <variavel3>) {
+            this.<variavel3> = <variavel3>;
+        }
+
+    }

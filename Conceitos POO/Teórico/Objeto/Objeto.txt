@@ -1,0 +1,9 @@
+Objeto
+
+Um objeto é um elemento computacional que representa, no domínio da solução, alguma entidade (abstrata ou concreta)
+do domínio de interesse do problema sob análise. Objetos similares são agrupados em classes. 
+No paradigma de orientação a objetos, tudo pode ser potencialmente representado como um objeto.
+São instâncias de classes, que determinam qual informação um objeto contém e como ele pode manipulá-la. 
+É uma entidade capaz de reter um estado (informação) e que oferece uma série de informações (comportamento) 
+ou para examinar ou para afetar este estado. É através deles que praticamente todo o processamento ocorre em sistemas 
+implementados com linguagens de programação orientada a objetos.

@@ -1,0 +1,35 @@
+Vetores
+
+Vetores são estruturas de dados que armazenam usualmente uma quantidade fixa de dados de um certo tipo; por esta razão,
+também são conhecidos como estruturas homogêneas de dados.
+Internamente, um vetor armazena diversos valores, cada um associado a um número que se refere à posição de armazenamento,
+e é conhecido como índice. Os vetores são estruturas indexadas, em que cada valor que pode ser armazenado em uma certa 
+posição (índice) é chamado de elemento do vetor.
+Cada elemento do vetor pode ser utilizado individualmente de forma direta, ou seja, pode ser lido ou escrito diretamente,
+sem nenhuma regra ou ordem preestabelecida, fazendo dos vetores estruturas de dados de acesso aleatório.O número de posições
+de um vetor corresponde ao tamanho que ele tem; assim, um vetor de tamanho 10 tem esse número de elementos, isto é, pode
+armazenar até dez elementos distintos. Os diferentes elementos de um vetor são distinguidos unicamente pela posição que
+ocupam no vetor. Cada posição de um vetor é unicamente identificada por um valor inteiro positivo, linear e sequencialmente
+numerado.
+
+a[i], corresponde ao i-ésimo elemento do vetor a, sendo que o valor da variável i deve pertencer ao intervalo dos índices
+do vetor: ((i >= 0) && (i < a.length)).
+
+O Java como as linguagens C e C++ são linguagens com vetores zero-based, isto é, as posições do vetor iniciam a numeração
+a partir do valor 0, portanto, um vetor de tamanho 10 teria índices iniciados em 0 prosseguindo até o 9.
+
+Sintaxe:
+
+int vetor[] = new int[<tamanho>]; // declaração do vetor
+int i; // índice ou posição
+
+// processando os <tamanho> elementos do vetor "vetor"
+for (i = 0; i < <tamanho>; i++) {
+    vetor[i] = i; // na i-ésima posição do vetor "v" armazena o valor da variável "i"
+} 
+
+Estrutura for aprimorada:
+
+for (<parâmetro>: <nome do vetor>) { // utilizado para percorrer os elementos de um vetor sem usar um contador
+    <instrução>;
+}

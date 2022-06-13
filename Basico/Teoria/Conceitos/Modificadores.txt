@@ -1,0 +1,44 @@
+Modificadores de Acesso
+
+Os modificadores de acesso são padrões de visibilidade de acessos às classes, atributos e métodos. 
+Esses modificadores são palavras-chaves reservadas pelo Java, ou seja, palavras reservadas não podem ser usadas 
+como nome de métodos, classes ou atributos.
+Como boas práticas (best practices) do Java, na maioria das declarações de variáveis de instância são definidos 
+os seus atributos com a palavra-chave private, para garantir a segurança de alterações acidentais, 
+sendo somente acessíveis através dos métodos. Essa ação tem como efeito ajudar no encapsulamento dos dados, 
+preservando ainda mais a segurança e a aplicação de programação orientada a objetos do Java.
+Por exemplo, quando um programa cria (instancia) um objeto da classe Banco, a variável senha é encapsulada (ocultada) 
+no objeto onde pode ser acessada apenas por métodos da classe do objeto, os métodos getters e setters, que manipulam 
+a variável de instância.
+
+public
+Uma declaração com o modificador public pode ser acessada de qualquer lugar e por qualquer entidade que possa 
+visualizar a classe a que ela pertence.
+
+private
+Os membros da classe definidos como não podem ser acessados ou usados por nenhuma outra classe. 
+Esse modificador não se aplica às classes, somente para seus métodos e atributos. 
+Esses atributos e métodos também não podem ser visualizados pelas classes herdadas.
+
+protected
+O modificador protected torna o membro acessível às classes do mesmo pacote ou através de herança, 
+seus membros herdados não são acessíveis a outras classes fora do pacote em que foram declarados.
+
+default (padrão):
+A classe e/ou seus membros são acessíveis somente por classes do mesmo pacote, na sua declaração não é definido
+nenhum tipo de modificador, sendo este identificado pelo compilador.
+
+final
+Quando é aplicado na classe, não permite estende-la, nos métodos impede que o mesmo seja sobrescrito (overriding) 
+na subclasse, e nos valores de variáveis não pode ser alterado depois que já tenha sido atribuído um valor.
+
+abstract
+Esse modificador não é aplicado nas variáveis, apenas nas classes. Uma classe abstrata não pode ser instanciada, 
+ou seja, não pode ser chamada pelos seus construtores. Se houver alguma declaração de um método como abstract (abstrato),
+a classe também deve ser marcada como abstract.
+
+static
+É usado para a criação de uma variável que poderá ser acessada por todas as instâncias de objetos desta classe
+como uma variável comum, ou seja, a variável criada será a mesma em todas as instâncias e quando seu conteúdo 
+é modificado numa das instâncias, a modificação ocorre em todas as demais. E nas declarações de métodos ajudam no 
+acesso direto à classe, portanto não é necessário instanciar um objeto para acessar o método.

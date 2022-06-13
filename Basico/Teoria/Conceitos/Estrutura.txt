@@ -1,6 +1,16 @@
 Classes: Uma classe é uma forma de definir um tipo de dado em uma linguagem orientada a objeto. Ela é formada
-por dados e comportamentos. Para definir os dados são utilizados os atributos, e para definir o comportamento 
+por dados e comportamentos. Para definir os dados são utilizados os atributos, e para definir o comportamento  
 são utilizados métodos.
+Classes são tipos referência, variáveis cujo tipo são classes não devem ser entendidas como caixas, mas sim como
+ponteiros para caixas. O endereço das variáveis de classe ficam alocadas numa parte da memória chamada stack,
+já seu objeto fica alocado em outra parte da memória chamada heap, onde ficam alocados os objetos em tempo
+de execução, realizando uma alocação dinâmica de memória que aponta para a variável de classe alocada no stack.
+Em Java também existem os tipos primitivos, que são tipos valor. Tipos valor são caixas e não ponteiros, ou seja,
+seu valores são armazenados na caixa, alocadas na área stack da memória.
+Vale ressaltar que os conceitos stack e heap são abstratos, não são áreas fisicamente reservadas na memória.
+
+Tipos primitivos em Java: boolean, char, byte, short, int, long, float e double.
+
 
 Atributos: Os Atributos em Programação Orientada a Objetos são os elementos que definem a estrutura de uma classe. 
 Os atributos também são conhecidos como variáveis de classe, e podem ser divididos em dois tipos básicos: 
