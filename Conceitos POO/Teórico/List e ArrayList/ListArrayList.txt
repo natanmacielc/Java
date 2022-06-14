@@ -1,0 +1,9 @@
+List
+
+O List é uma interface e o ArrayList é a classe que a implementa. 
+Uma coleção indexada de objetos às vezes chamada de sequência. Como nos vetores, índices de List são baseados em zero,
+isto é, o índice do primeiro elemento é zero. Além dos métodos herdados de Collection, List fornece métodos para manipular
+elementos baseado na sua posição (ou índice) numérica na lista, remover determinado elemento, procurar as ocorrências 
+de um dado elemento e percorrer sequencialmente (ListIterator) todos os elementos da lista. A interface List é implementada 
+por várias classe, incluídas as classes ArrayList (implementada como vetor), LinkedList e Vector.
+

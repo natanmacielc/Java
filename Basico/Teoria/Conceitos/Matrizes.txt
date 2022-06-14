@@ -1,0 +1,16 @@
+Matriz
+
+Em variáveis (ou objetos) do tipo array podem ser armazenados um grupo de valores, cada um associado a um número
+ou números (no caso de estruturas multidimensionais) que se referem à posição de armazenamento. As posições do valor
+são conhecidas como índices ou subscritos do valor. Portanto, os arrays são estruturas indexadas, em que cada valor
+que pode ser armazenado em certa posição (índice) é chamado de elemento do array.
+
+os arrays com duas dimensões costumam ser utilizados para representar tabelas de valores que consistem
+nas informações dispostas em linhas e colunas. Para identificar um elemento da tabela particular, devem-se
+especificar dois índices. Por convenção, o primeiro identifica a linha do elemento e o segundo, sua coluna. 
+Portanto, a referência m[i][j] corresponde ao elemento da “i-ésima” linha e “j-ésima” coluna do array bidimensional
+
+Sintaxe:
+
+int m[][] = new int[<coluna>][<linha>];
+

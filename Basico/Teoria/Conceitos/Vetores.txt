@@ -12,6 +12,19 @@ armazenar até dez elementos distintos. Os diferentes elementos de um vetor são
 ocupam no vetor. Cada posição de um vetor é unicamente identificada por um valor inteiro positivo, linear e sequencialmente
 numerado.
 
+Na programação de computadores, o tipo de dados de uma variável define os valores e as operações que podem ser realizadas 
+sobre ela. Em uma variável declarada a partir dos tipos de dados simples (int, float, double, char e boolean), é permitido 
+o armazenamento de um “único” valor por vez. Para agrupar e manipular “diversos” valores em uma mesma estrutura deve-se 
+utilizar os tipos de dados estruturados, como por exemplo, os vetores.
+
+Os vetores (ou arrays) são estruturas de dados que representam um conjunto de valores do mesmo tipo (estrutura homogênea), 
+referenciáveis pelo mesmo nome e individualizados entre si através de sua posição dentro desse conjunto (variáveis indexadas).
+
+Os programas de computador frequentemente recorrem aos arrays para realizar algum tipo de processamento de dados, 
+como por exemplo, na realização de contagens e somatórios de valores.
+
+
+
 a[i], corresponde ao i-ésimo elemento do vetor a, sendo que o valor da variável i deve pertencer ao intervalo dos índices
 do vetor: ((i >= 0) && (i < a.length)).
 
@@ -30,6 +43,8 @@ for (i = 0; i < <tamanho>; i++) {
 
 Estrutura for aprimorada:
 
-for (<parâmetro>: <nome do vetor>) { // utilizado para percorrer os elementos de um vetor sem usar um contador
+for (<tipo> <parâmetro>: <nome do vetor>) { // utilizado para percorrer os elementos de um vetor sem usar um contador
     <instrução>;
 }
+
+parâmetro tem duas partes, a primeira corresponde ao tipo dos elementos no vetor e a segunda um identificador.
