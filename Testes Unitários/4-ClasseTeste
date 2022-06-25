@@ -47,3 +47,9 @@ após a execução do método ExecultaCalculo().
 
 Veja que na lateral esquerda da tela temos o resultado da execução do teste através do JUnit, que nesse exemplo retornou com 
 sucesso(verde), pois os valores passados(10 e 5) certamente quando somados retornam 15.
+
+Resultado em caso de FALHA no Eclipse
+Agora na  em ./figuras/figura11, seguindo o mesmo raciocínio, vamos simular uma execução com falha, para isso, mudaremos o atributo 
+PassaValor2 para 6, dessa forma, claramente que 10 somado a 6 não dá 15 (valor esperado), dessa forma, o JUnit retornará uma 
+falha (vermelha), observe também, que na parte inferior da lateral esquerda da tela, ele mostra qual método falhou, e qual foi à 
+falha.
