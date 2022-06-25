@@ -1,0 +1,21 @@
+Arquitetura das classes no JUnit
+Para uma melhor compreensão de como o JUnit funciona é importante que entenda como suas classes estão organizadas dentro da API 
+do framework (ver em ./figuras/figura5).
+
+Como implementar o JUnit
+Veja um exemplo de como você pode codificar em Java, classes de testes:
+
+Crie uma classe que estenda junit.framework.TestCase para cada classe a ser testada:
+
+import junit.framework.*;
+class SuaClasseTest extends TestCase {...
+}
+Para cada método a ser testado defina um método public void test???() no test case SuaClasse:
+
+public int Soma(Object o...) {...
+}
+SuaClasseTest: public void testSoma()
+
+Analisando o resultado no JUnit
+Quando os testes forem executados em modo gráfico, Veja em ./figuras/figura6, que os métodos testados podem apresentar os seguintes 
+resultados: verde para sucesso, roxo para falha e vermelho para exceção.

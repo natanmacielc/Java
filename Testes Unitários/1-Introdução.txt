@@ -1,0 +1,91 @@
+Testes Unitários
+
+Neste artigo, abordo um assunto vital para programadores e analistas que trabalham sobre um paradigma ágil como 
+Extreme Programming, tentarei mostrar de forma sucinta tópicos como: Um pouco de XP, Como programar guiado a testes? Teste 
+Unitário (O que? Por quê? Quando? Quem? Como?), JUnit (O que? por quê? quando? quem? como?). JUnit (Planejamento e arquitetura 
+das classes), JUnit (Funcionamento e Análise do resultado), Implementado testes em JUnit usando o Eclipse e Outros métodos e 
+técnicas complementares.
+
+Um pouco de XP
+XP é um apelido carinhoso de uma metodologia ágil de desenvolvimento designada Extreme Programming, com foco em agilidade de 
+equipes e qualidade de projetos, apoiada em valores como simplicidade, comunicação, feedback e coragem.
+
+XP é uma metodologia muito comportamental, onde prima mudanças de atitudes e práticas. Sua principal mudança está na máxima 
+integração entre pessoas e, principalmente, estimulando uma participação maior do cliente. Portando, literalmente, temos que 
+“FAZER O PROGRAMA COM O CLIENTE”.
+
+Práticas de XP
+XP sugere um conjunto de boas práticas que melhoram o planejamento, execução, e gerenciamento de seu projeto de software.
+
+Essas práticas (Ver em ./figuras/figura1) melhoram sua eficiência e eficácia, diminuindo o retrabalho, garantindo dessa forma a qualidade
+do seu projeto.
+
+TDD - Test Driven Development
+O conceito de Desenvolvimento Guiado por Testes define que antes de criarmos um código novo (classe), devemos escrever um teste 
+(classe de test case) para ele. Essa prática traz vários benefícios às equipes de desenvolvimento e inclusive estes testes serão 
+usados como métrica em todo o tempo de vida do projeto. Veja em ./figuras/figura2 um modelo de como funciona o processo de testes 
+unitários dentro de seu projeto.
+
+O que são Testes Unitários?
+Imagine por exemplo, se um avião só fosse testado após a conclusão de sua construção, com certeza isso seria um verdadeiro 
+desastre, é nesse ponto que a engenharia aeronáutica é uma boa referência em processos de construções de projetos de software, 
+principalmente em sistemas de missão crítica, pois durante a construção e montagem de um avião todos os seus componentes são 
+testados isoladamente até a exaustão, e depois cada etapa de integração também é devidamente testada e homologada.
+
+O teste unitário, de certa forma se baseia nessa ideia, pois é uma modalidade de testes que se concentra na verificação da menor 
+unidade do projeto de software. É realizado o teste de uma unidade lógica, com uso de dados suficientes para se testar apenas à 
+lógica da unidade em questão.
+
+Em sistemas construídos com uso de linguagens orientadas a objetos, essa unidade pode ser identificada como um método, uma 
+classe ou mesmo um objeto.
+
+Porque usar Testes Unitários?
+Abaixo temos alguns dos principais fatores que motivam o uso sistemático da prática de testes unitários:
+
+Previne contra o aparecimento de “BUG’S” oriundos de códigos mal escritos;
+Código testado é mais confiável;
+Permite alterações sem medo (coragem);
+Testa situações de sucesso e de falha;
+Resulta em outras práticas XP como: Código coletivo, refatoração, integração contínua;
+Serve como métrica do projeto (teste ==requisitos);
+Gera e preserva um “conhecimento” sobre as regras de negócios do projeto.
+
+    Organização dos testes e práticas XP no Teste Unitário
+Em ./figuras/figura3, temos um diagrama que mostra a forma como as classes de testes ficam organizadas em um projeto codificado em
+Java e a correlação com algumas práticas XP.
+
+Quando fazer Teste Unitário?
+No início: Primeiro projetar e escrever as classes de testes, depois as classes com regra de negócios.
+
+Diariamente: É SUGERIDO que seja rodado os testes várias vezes ao dia (é fácil corrigir pequenos problemas do que corrigir um 
+“problemão” somente no final do projeto).
+
+Quem faz o Teste Unitário?
+Test Case (para cada classe): Desenvolvedor (Projeta, escreve e roda).
+
+Test Suite(Roda vários test cases): Coordenador e Desenvolvedor (Projeta, escreve e roda).
+
+Vale lembrar que o Teste de aceitação (homologação) é feito junto ao cliente.
+
+Outra visão nova, interessante e muito polêmica, é a aproximação da responsabilidade dos testes ao programador, o que em algumas 
+outras abordagens metodológicas é feito somente por equipes separadas, como por exemplo, uma equipe de teste/homologação.
+
+Porém esse contexto é a base de qualquer metodologia ágil, pois dessa forma, o próprio programador, ao criar e executar os testes, 
+adquiri um controle maior e imediato na prevenção e correção de bugs, contribuindo substancialmente para redução do tempo de vida 
+de um projeto.
+
+Teste Unitário: O que testar?
+Sempre nós ficamos em dúvida sobre o que devemos testar em nossas classes, existem alguns macetes que podem nos ajudar a 
+descobrir quais e quantos testes deverão ser escritos:
+
+A principal regra para saber o que testar é: “Tenha criatividade para imaginar as possibilidades de testes”;
+Comece pelas mais simples e deixe os testes “complexos“ para o final;
+Use apenas dados suficientes (não teste 10 condições se três forem suficientes);
+Não teste métodos triviais, tipo get e set;
+No caso de um método set, só faça o teste caso haja validação de dados;
+Achou um bug? Não conserte sem antes escrever um teste que o pegue (se você não o fizer, ele volta).
+Para fixar bem essas dicas, na ./figura/figura4, temos um exercício de imaginação, onde você deverá achar as possibilidades de testes 
+neste diagrama de classe.
+
+Claro que não existe uma resposta única para esse exercício, pois você, baseando-se em suas experiências anteriores e sua 
+criatividade, pode ter várias visões acerca dessa classe.

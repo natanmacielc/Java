@@ -1,0 +1,49 @@
+Criando a classe de teste no Eclipse
+Para exemplificar o uso do JUnit, usaremos o IDE Eclipse 3.0, que atualmente é um dos melhores ambientes para desenvolvimento de 
+aplicações Java e por ser um projeto totalmente free que já incorpora em sua instalação, várias funcionalidades que aplicam 
+práticas XP como refatoração, testes unitários e padrões. consulte a seção links desse artigo, o endereço oficial do projeto 
+Eclipse para você baixá-lo.
+
+Portanto, nesse caso, você não precisará fazer o download do JUnit e instalá-lo separadamente, pois o mesmo já está embutido no 
+Eclipse.
+
+Veja em ./figuras/figura7 a estrutura do test case CaculoTest.java, que é uma classe de testes implementada em Java através do 
+Eclipse.
+
+Testando a classe no Eclipse
+Na figura anterior, você viu a sua classe de teste, e agora na em ./figuras/figura8 você verá a classe a ser testada para aquele 
+fitest case.
+
+Rodando o teste em modo gráfico no Eclipse
+Conforme mostra na figura 9 para rodar o teste em modo gráfico pelo Eclipse, abra sua classe de teste, clique no menu Run\Run As 
+e escolha a opção JUnit Test.
+
+Resultado em caso de sucesso
+Você pode notar na figura 10, que o teste case CalculoTest.java está usando a declaração assertiva do método assertEquals(), que 
+é assinado com dois parâmetros principais: o valor esperado, e valor retornado.
+
+Observe que para isso instanciamos os atributos(variáveis) PassaValor1 = 10, PassaValor2 = 5 e RetornoEsperado = 15.
+
+Sendo que para o atributo RetornoFeito atribuímos o resultado do método xecutaCalculo() da classe Calculo, passando como 
+parâmetros PassaValor1 e PassaValor2.
+
+E por final usamos o método assertEquals (RetornoEsperado, RetornoFeito), para comparar o valor esperado com o valor retornado 
+após a execução do método ExecultaCalculo().
+
+Veja que na lateral esquerda da tela temos o resultado da execução do teste através do JUnit, que nesse exemplo retornou com 
+sucesso(verde), pois os valores passados(10 e 5) certamente quando somados retornam 15.
+
+Resultado em caso de sucesso
+Você pode notar na figura em ./figuras/figura10, que o teste case CalculoTest.java está usando a declaração assertiva do método 
+assertEquals(), que é assinado com dois parâmetros principais: o valor esperado, e valor retornado.
+
+Observe que para isso instanciamos os atributos(variáveis) PassaValor1 = 10, PassaValor2 = 5 e RetornoEsperado = 15.
+
+Sendo que para o atributo RetornoFeito atribuímos o resultado do método xecutaCalculo() da classe Calculo, passando como 
+parâmetros PassaValor1 e PassaValor2.
+
+E por final usamos o método assertEquals (RetornoEsperado, RetornoFeito), para comparar o valor esperado com o valor retornado 
+após a execução do método ExecultaCalculo().
+
+Veja que na lateral esquerda da tela temos o resultado da execução do teste através do JUnit, que nesse exemplo retornou com 
+sucesso(verde), pois os valores passados(10 e 5) certamente quando somados retornam 15.

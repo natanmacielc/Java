@@ -1,0 +1,30 @@
+O que é JUnit?
+Agora sim, depois dessa pequena conceituação sobre testes unitários, você verá a partir desse tópico que o JUnit é um framework que facilita o desenvolvimento e execução de testes unitários em código Java.
+
+Ele Fornece uma completa API (conjunto de classes) para construir os testes e Aplicações gráficas e em modo console para executar os testes criados.
+
+Por que usar JUnit?
+Os principais motivos que favorecem o uso desse framework são:
+
+JUnit pode verificar se cada unidade de código funciona da forma esperada;
+Facilita a criação, execução automática de testes e a apresentação dos resultados;
+É Orientado a Objeto;
+É free e pode ser baixado em: www.junit.org
+Como instalar o JUnit?
+Para usar o JUnit em sua máquina basta ter em mente essas duas idéias:
+
+Caso você não tenha o JUnit instalado, faça o download do arquivo junit.jar em www.junit.org, após inclua-o no classpath para compilar e rodar os programas de teste.
+Porém o JUnit já vem configurado nas versões recentes de IDE’s como Eclipse, NetBeans, JBuilder, BlueJ e outros.
+
+Planejando os testes no JUnit
+Metodologias ágeis como Extreme Programming, exigem organização e disciplina, portanto é sugerido que você faça um bom planejamento antes de sair por aí escrevendo código feito um doido.
+
+A lista abaixo exemplifica bem como você pode planejar e executar seus testes:
+
+Defina uma lista de tarefas a implementar (o que testar);
+Escreva uma classe (test case) e implemente um método de teste para uma tarefa da lista;
+Rode o JUnit e certifique-se que o teste falha;
+Implemente o código mais simples que rode o teste;
+Refatore o código para remover a duplicação de dados;
+Caso necessário, escreva mais um teste ou refine o existente;
+Faça esses passos para toda a lista de tarefas;

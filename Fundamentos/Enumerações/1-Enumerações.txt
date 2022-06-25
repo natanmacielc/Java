@@ -1,0 +1,134 @@
+Introdução
+
+Introdução
+Os tipos enumeradores enum foram incorporados no Java a partir da versão 1.5, tornando-se uma palavra reservada do Java. É muito
+importante que o desenvolvedor sempre conheça as novidades que são lançadas a cada nova especificação da linguagem.
+
+As definição de constantes em Java é bastante comum em diversas aplicações. O uso das constantes ajuda a tornar o nosso programa
+muito mais fácil de ler e de dar manutenção. Um exemplo é um código qualquer onde deseja-se informar o mês que um determinado
+empregado ingressou na sua empresa, que poderia ser dado através da chamada de método: mesDeIntegracaoFuncionario(3).
+
+Veja que o numeral acima “3” não indica nada, pouco diz esse número sendo passado nesse método. Agora se fosse escrito da 
+forma abaixo:
+
+mesDeIntegracaoFuncionario(ABRIL)
+
+Nota-se que o programa ganhou muito mais em legibilidade. Imagine agora diversos métodos com mais parâmetros sendo passados. 
+Teria-se um bom ganho na legibilidade do software.
+
+A declaração desta constante poderia ser como abaixo:
+public static final int JANEIRO = 1
+public static final int FEVEREIRO = 2
+public static final int MARCO = 3
+public static final int ABRIL = 4
+public static final int MAIO = 5
+public static final int JUNHO = 6
+public static final int JULHO = 7
+public static final int AGOSTO = 8
+public static final int SETEMBRO = 9
+public static final int OUTUBRO = 10
+public static final int NOVEMBRO = 11
+public static final int DEZEMBRO = 12
+
+O código acima declara as constantes que não podem ser alteradas (por isso são final) e também são públicas (acessíveis por 
+todos) e estáticas (pertencem a classe e não a uma instancia dela).
+
+Apesar das constantes representarem um certo ganho na legibilidade e na manutenção, ainda existe o problema na qual o 
+desenvolvedor ainda pode passar um número para o método. Inclusive número inválidos como “200” e “-1”. Aqui torna-se necessário 
+o estudo das enumerações que garantirá maior legibilidade, elegância, ganhos na manutenção, etc.
+
+Visão Geral
+
+A partir da versão 1.5 do Java a plataforma passou a suportar o uso de enumerações (Enum). Com isso tem-se uma declaração muito
+mais elegante, como exemplo abaixo:
+enum Mes {
+JANEIRO, FEVEREIRO, MARCO, ABRIL, MAIO,
+JUNHO, JULHO, AGOSTO, SETEMBRO, OUTUBRO,
+NOVEMBRO, DEZEMBRO
+}
+
+ipos enumerados herdam da classe Enum, que possui alguns métodos úteis como name() e ordinal(), que retornam o nome da constante
+e sua posição na estrutura respectivamente.
+
+A utilização da enumeração é muito simples. Retomando ao exemplo do início do artigo, imagine que agora o desenvolvedor queira 
+chamar o método novamente mas agora utilizando a enumeração da listagem abaixo.
+mesDeIntegracaoFuncionario(Mes.ABRIL)
+
+Como a estrutura enum é derivada da classe Enum podemos ter ainda em sua declaração outros métodos e propriedades, tornando as 
+enumerações ainda mais poderosas. No exemplo abaixo a enumeração da listagem abaixo.
+
+public class TesteEnum {
+
+enum Mes {
+JANEIRO, FEVEREIRO, MARCO, ABRIL, MAIO,
+JUNHO, JULHO, AGOSTO, SETEMBRO, OUTUBRO,
+NOVEMBRO, DEZEMBRO;
+
+public String getDescricao() {
+switch(this) {
+case JANEIRO: return "Janeiro";
+case FEVEREIRO: return "Fevereiro";
+case MARCO: return "Março";
+case ABRIL: return "Abril";
+case MAIO: return "Maio";
+case JUNHO: return "Junho";
+case JULHO: return "Julho";
+case AGOSTO: return "Agosto";
+case SETEMBRO: return "Setembro";
+case OUTUBRO: return "Outubro";
+case NOVEMBRO: return "Novembro";
+case DEZEMBRO: return "Dezembro";
+default : return "";
+}
+}
+
+}
+
+public static void main(String[] args) {
+System.out.println(Mes.JANEIRO.getDescricao());
+}
+
+}
+
+Pode-se notar que o código acima declara um novo método que é o getDescricao que trás uma descrição simples formatada do mês 
+selecionado.
+
+Como última observação vale ressaltar que as enumerações podem ser declaradas fora de uma classe, como exemplo abaixo:
+
+enum Mes {
+JANEIRO, FEVEREIRO, MARCO, ABRIL, MAIO,
+JUNHO, JULHO, AGOSTO, SETEMBRO, OUTUBRO,
+NOVEMBRO, DEZEMBRO
+}
+
+public class TesteEnum {
+
+public states void main(String args []) {
+//alguma coisa usando a enum
+}
+}
+
+Neste caso acima vale lembrar que a enumeração não pode ser privada nem protegida. O código acima pode ser utilizando em um 
+mesmo arquivo como TesteEnum.class.
+
+Enum também pode ser declarado dentro de uma classe como ilustrado na listagem 7.
+
+No entanto, vale enfatizar que enumerações NÃO podem ser declaradas dentro de métodos.
+
+Boas Práticas
+Utilizar enumerações por si só ajudam na redução do número crescente de bugs na aplicação. Isso ocorre pois as enumerações 
+reduzem o número infinito de possibilidades de valores que podem ser atribuídos. Por exemplo, você pode limitar os meses do ano
+em apenas 12 meses, ou menos se for o caso da aplicação. Poderia-se decidir que um determinado método só receberia dos meses de 
+Janeiro a Junho e de Agosto até Novembro, se informado qualquer mês diferente disso poderia gerar um erro para o usuários, pois
+os outros meses não são aceitos nos meses úteis de trabalho para o ano. Assim, com simples atribuições você garante para o 
+compilador de atribuir coisas que não fazem parte do escopo.
+
+Procure sempre atribuir as constantes dos enums em MAIÚSCULAS, isso não é o autor do artigo que está definido e sim isso é uma 
+boa prática utilizada pelos desenvolvedores e além disso é uma prática sugerida pela convenção de códigos da Sun, por isso deve
+sim ser seguida.
+
+Em geral as enums podem ser declaradas como classes separadas ou membros de classes. Normalmente, quando a enumeração se torna 
+grande, com diversas constantes, propriedades e métodos deseja-se por declarar uma classe própria para essa enum, não poluindo 
+assim a classe principal. No entanto, quando a enumeração é pequena possuindo poucas constantes ou métodos, geralmente 
+declara-se a enumeração como um membro de uma classe. Lembrando que uma enumeração nunca pode ser declaração dentro de métodos.
+
