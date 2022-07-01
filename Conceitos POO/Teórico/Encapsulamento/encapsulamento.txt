@@ -1,0 +1,58 @@
+Encapsulamento
+É a técnica utilizada para esconder uma ideia, ou seja, não expôr detalhes internos para o usuário, tornando partes do sistema 
+mais independentes possível. Por exemplo, quando um controle remoto estraga apenas é trocado ou consertado o controle e não a 
+televisão inteira. Nesse exemplo do controle remoto, acontece a forma clássica de encapsulamento, pois quando o usuário muda de 
+canal não se sabe que programação acontece entre a televisão e o controle para efetuar tal ação.
+
+Como um exemplo mais técnico podemos descrever o que acontece em um sistema de vendas, aonde temos cadastros de funcionários, 
+usuários, gerentes, clientes, produtos entre outros. Se por acaso acontecer um problema na parte do usuário é somente nesse setor 
+que será realizada a manutenção não afetando os demais.
+
+Em um processo de encapsulamento os atributos das classes são do tipo private. Para acessar esses tipos de modificadores, é 
+necessário criar métodos setters e getters.
+
+Por entendimento os métodos setters servem para alterar a informação de uma propriedade de um objeto. E os métodos getters para 
+retornar o valor dessa propriedade.
+
+Veja um exemplo de encapsulamento, na Listagem 1 gera-se os atributos privados (private) e é realizado o processo de geração dos 
+métodos setters e getters.
+
+Listagem 1: Encapsulamento da classe Funcionario.
+public class Funcionario {
+    private double salario;
+    private String nome;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+}
+
+Na Listagem 2, é instanciado a classe Funcionario, onde a variável de referência é usada para invocar os métodos setters, 
+informando algum dado. Ao final, é usado os métodos getters dentro do System.out.println para gerar a saída dos resultados que 
+foram passados nos métodos setters.
+
+Listagem 2: Classe Testadora dos métodos getters e setters.
+public class TestaFuncionario {
+
+    public static void main(String[] args) {
+        Funcionario funcionario = new Funcionario();
+        funcionario.setNome("Thiago");
+        funcionario.setSalario(2500);
+
+        System.out.println(funcionario.getNome());
+        System.out.println(funcionario.getSalario());
+
+    }
+}

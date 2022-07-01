@@ -1,0 +1,24 @@
+Abstração
+É utilizada para a definição de entidades do mundo real. Sendo onde são criadas as classes. Essas entidades são consideradas tudo 
+que é real, tendo como consideração as suas características e ações, veja na Figura 1 como funciona.
+
+Uma classe é reconhecida quando tem a palavra reservada “class”. Na Listagem 1 é mostrada a classe “Conta” com seus atributos 
+(características) e métodos (ações).
+
+public class Conta {
+    int numero;
+    double saldo;
+    double limite;
+
+    void depositar(double valor){
+        this.saldo += valor;
+    }
+
+    void sacar(double valor){
+        this.saldo -= valor;
+    }
+
+    void imprimeExtrato(){
+        System.out.println("Saldo: "+this.saldo);
+    }
+}
